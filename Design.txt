@@ -1,0 +1,23 @@
+Let's assume the program has these menu options: 1. Add a contact, 2. View all contacts, and 3. Exit program.
+The code that performs each action is organised into functions.
+
+1. When the user selects the 'Add a contact' option, the function to add a user will be called. 
+2. The user is prompted to input the name, phone number, and email address and this data is stored as a list (eg: [name,number,email]) in a temporary variable.
+3. The data in the temporary variable is added to the contacts list.
+4. Steps 1 to 3 are repeated as many times as neccessary.
+5. When the user selects the 'View all contacts' option, all the data stored in the contacts list is read by the program and output in a readable format.
+
+Criteria for valid user inputs:
+1. Name: This can only contain alphabets (both uppercase and lowercase), symbols such as hyphen/minus (-), grave accent/apostrophe (`), period/dot (.) and whitespace ( ).
+2. Phone number: This can only contain numbers and has to be ten digits long.
+3. Email address: This can only be in the format <user_name>@<domain_name>.<domain>, where:
+   a. User name: It can contain alphanumeric characters (uppercase and lowercase letters and numbers) and symbols such as period (.), underscore (_), percentage (%), hyphen/minus sign (-), and plus sign (+).
+   b. Domain name: It can contain alphanumeric characters (uppercase and lowercase letters and numbers) and symbols such as period (.) and hyphen/minus sign (-).
+   c. Domain: It can contain alphabets (both uppercase and lowercase).
+   d. Email format: The format condition (<user_name>@<domain_name>.<domain>) is strictly followed.
+
+Note: The criteria for name and email address are validated with the Regular Expressions (re or regex) module 
+
+Criteria for displaying outputs:
+1. Name: Always printed with the titlecase funtion.
+2. Phone number and email: Printed as it is.
