@@ -5,13 +5,14 @@ contacts=[]
 def Continue():
     input('Press enter to continue...')
     os.system('cls')
+
 def add_contact():
     while True: 
         name=input('Enter name: ')
         if re.search(r"^[a-zA-Z.` -]+$",name):
             break
         else:
-            print('Please enter a name...')
+            print('Please enter a valid name...')
     while True:
         num=input('Enter phone number: ')
         if len(num)==10 and num.isdigit():
@@ -27,6 +28,7 @@ def add_contact():
     contacts.append([name,num,email])
     print('Contact added...')
     Continue()
+
 def view_contacts():
     print('All contacts')
     print('************')
@@ -60,4 +62,5 @@ while True:
         case _:
             print('Invalid option')
             Continue()
+
     print()
