@@ -62,5 +62,4 @@ while True:
         case _:
             print('Invalid option')
             Continue()
-
     print()
