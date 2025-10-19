@@ -15,10 +15,13 @@ def add_contact():
         else:
             print('Please enter a valid name...')
     while True:
-        num=input('Enter phone number: ')
-        if len(num)==10 and num.isdigit():
-            break
-        else:
+        try:
+            num=int(input('Enter phone number: '))
+            if len(str(num))==10:
+                break
+            else:
+                print('Please enter a valid phone number...')
+        except:
             print('Please enter a valid phone number...')
     while True:
         email=input('Enter email address: ')
