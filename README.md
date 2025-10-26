@@ -10,6 +10,6 @@ The modules used in this project are:
 4. prettytable - To display the contacts in a SQL-table like format
 
 Instructions to run the program:
-  • Please use Visual Studio Code or any other IDEs/Interpretors that run the file in a terminal to make sure the program runs as intended.
-  • To run the phase 1 and phase 2 program, no additional modules are required.
-  • To run the phase 3 and phase 4 program, please install the 'prettytable' module.
+1. Please use Visual Studio Code or any other IDEs/Interpretors that run the file in a terminal to make sure the program runs as intended.
+2. To run the phase 1 and phase 2 program, no additional modules are required.
+3. To run the phase 3 and phase 4 program, please install the 'prettytable' module.
